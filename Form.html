@@ -25,7 +25,7 @@
 
     <section class="policies">
         <ul>
-            <li>Check-in time after 3:00pm on</li>
+            <li>Check-in time after 3:00pm</li>
             <li>Check-out time by 11:00am or charges are incurred</li>
             <li>Breakfast and afternoon tea/snacks included in cost</li>
             <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
@@ -71,6 +71,26 @@
                 <label for="numberOfGuests">Number of Guests:</label>
                 <input type="number" name="numberOfGuests" id="numberOfGuests" min="1" max="4" step="1" required>
             </div>
+
+            <div>
+                <label for="roomType">Room Type:</label>
+                <select name="roomType" id="roomType">
+                    <option disabled hidden selected>Choose One</option>
+                    <option value="twoDoubleBeds">Two Double beds</option>
+                    <option value="twoQueenBeds">Two Queen beds</option>
+                    <option value="oneKingBed">One King Bed</option>
+                </select>
+            </div>
+
+            <div>
+                <div>Ocean Veiw (additional cost)</div>
+                <label for="view">Yes</label>
+                <input type="radio" name="yes" id="yes" value="yes">
+
+                <label for="view">No</label>
+                <input type="radio" name="no" id="no" value="no">
+            </div>
+
         </form>
     </section>
 

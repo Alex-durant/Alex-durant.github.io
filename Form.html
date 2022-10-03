@@ -35,7 +35,7 @@
     </section>
 
     <section class="reserve">
-        <form method="post" name="reservation" data-netlify="true">
+        <form method="post" name="reservation" data-netlify="true" enctype="multipart/form-data">
            
             <div>
                 <label for="firstName">First Name:</label>
@@ -91,9 +91,39 @@
                 <input type="radio" name="no" id="no" value="no">
             </div>
 
+            <div>
+                <label for="notes">Special requests:</label>
+                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <label for="vaccineProof">Vaccine Proof</label>
+                <input type="file" name="vaccineProof" id="file">
+            </div>
+
+            <div>
+                <label for="agreeToTerms">Agree to terms:</label>
+                <input type="checkbox" name="agreeToTerms" id="agreeToTerms">
+            </div>
+
+            <div>
+                <label for="password">Create a Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <button type="submit"></button>
+            </div>
+
+            <div>
+                <button type="reset"></button>
+            </div>
         </form>
     </section>
-
+<footer>
+&copy;2022 The Somers Inn <br>
+Somers, CT
+</footer>
 </div>
 </body>
 </html>

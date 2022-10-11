@@ -28,3 +28,27 @@ h3 {
 site-intro {
     font-size: 1.25rem;
 }
+
+nav a {
+    color: #bb1b47;
+    text-decoration: wavy;
+    text-transform: uppercase;
+}
+
+nav a :visited {
+    color: blue;
+    text-decoration: line-through;
+    text-transform: lowercase;
+}
+
+nav a :hover {
+    color: yellow;
+    text-decoration: none;
+    text-transform: none;
+}
+
+nav a :active {
+    color: #bb1b47;
+    text-decoration: wavy;
+    text-transform: unset;
+}

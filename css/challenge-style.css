@@ -35,19 +35,19 @@ nav a {
     text-transform: uppercase;
 }
 
-nav a :visited {
-    color: blue;
-    text-decoration: line-through;
-    text-transform: lowercase;
-}
-
-nav a :hover {
-    color: yellow;
-    text-decoration: none;
+nav a:visited {
+    color: blueviolet;
+    text-decoration: wavy;
     text-transform: none;
 }
 
-nav a :active {
+nav a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+nav a:active {
     color: #bb1b47;
     text-decoration: wavy;
     text-transform: unset;

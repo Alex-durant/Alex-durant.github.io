@@ -6,7 +6,8 @@ html {
     color: #5F7161;
 }
 
-h1, h2 {
+h1, 
+h2 {
     color: #FF8787;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: underline overline dashed #665a66 6px;
@@ -21,7 +22,109 @@ h2 {
     font-size: 2.00rem;
 }
 
-h1 ::before,
-h1 ::after {
+h3 {
+    font-size: .90rem;
+}
+
+h1::before,
+h1::after {
     content: "\1F43E ";
+}
+
+h2::before,
+h2::after {
+    content: "\270D ";
+}
+
+nav li {
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+nav, 
+header,
+main,
+footer {
+    text-align: center;
+}
+
+nav a, 
+.assignments a,
+footer a {
+    text-decoration: none;
+    color: #4CACBC;
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1.5;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline overline dashed #5F7161;
+    text-underline-offset: 6px;
+    color: #A25B5B;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+    content: "\1F43E ";
+}
+
+header p {
+   font-size: 120%; 
+}
+
+.assignments li {
+    font-size: 1.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    list-style-type: none;
+  }
+
+.assignments a:link,
+.assignments a:visited {
+    line-height: 1.6;
+}
+
+.assignments a:hover,
+.assignments a:active {
+    text-decoration: underline overline dashed #5F7161;
+    text-underline-offset: 6px;
+    color: #A25B5B;
+}
+
+.assignments li:hover:before,
+.assignments li:hover:after {
+    content: "\270D";
+}
+
+footer a {
+    font-size: 1.0rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+footer a:link,
+footer a:visited {
+    line-height: 1.4;
+}
+
+footer a:hover,
+footer:active {
+    text-decoration: underline overline dashed #5F7161;
+    text-underline-offset: 6px;
+    color: #A25B5B
+}
+
+footer a:hover::before,
+footer a:hover::after {
+    content: "\1F4E9";
 }

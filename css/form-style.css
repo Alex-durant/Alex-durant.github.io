@@ -1,23 +1,46 @@
 html {
     box-sizing : border-box ;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
-    line-height: 1.2rem;
-    color: ;
-  }
+    line-height: 1.6rem;
+}
+
+*,
+* ::before,
+* ::after {
+    box-sizing: inherit;
+}
 
 body {
-    background-color: #749F82;
-    background-image: url(/img/chewy-I-rgDPLKogs-unsplash.jpg);
+    background-color: rgb(51, 27, 12);
+    background-image: url(/img/reba-spike-OjB_lkGKhX8-unsplash.jpg);
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+#wrapper {
+    width: 60%;
+    background-color: rgba(232, 162, 56, 0.5);
+    color: rgb(145, 253, 233);
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
 
-* ,
-* :: before ,
-* :: after {
-    box-sizing : inherit ;
+nav {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    padding: 12px 16px;
+    background-color: rgb(56, 220, 232);
+    border-radius: 8px;
+    margin-right: 8px;
 }

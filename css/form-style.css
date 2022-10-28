@@ -108,6 +108,7 @@ button {
     padding: .5rem;
     margin-bottom: 1rem;
     border-radius: 8px;
+    margin-left: 200px;
     text-transform: uppercase;
     font-size: .65rem;
     letter-spacing: 1px;
@@ -117,4 +118,23 @@ button {
 
 button[type=submit] {
     margin-top: 2rem;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: rgb(128, 57, 13);
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline dashed;
+    text-underline-offset: 8px;
+}
+
+footer {
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    text-align: center;
 }

@@ -93,3 +93,18 @@ header h2 {
 .emoji::after {
     content: "\1f370";
 }
+
+.details,
+.ingredients,
+.intstructions,
+.nutrition {
+    width: 40%;
+    float: left;
+}
+
+.details,
+.intstructions {
+    margin-right: 16%;
+    margin-left: 2%;
+}
+

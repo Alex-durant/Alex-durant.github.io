@@ -154,3 +154,26 @@ footer ul {
     float: left;
     width: 33%;
 }
+
+footer p {
+    clear: both;
+}
+
+/* media queries go below */
+
+@media (max-width: 360px) {
+
+    html {
+        line-height: 135%;
+    }
+
+    nav a {
+        padding: 5px;
+        letter-spacing: normal;
+        font-size: .9rem;
+    }
+
+    nav ul {
+        padding-left: 10px;
+    }
+}

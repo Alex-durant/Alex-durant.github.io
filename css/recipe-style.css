@@ -196,4 +196,29 @@ footer p {
         max-width: 50%;
         margin-left: 20%;
     }
+
+    .rate {
+        font-size: 1rem;
+    }
+
+    .details,
+    .ingredients,
+    .instructions,
+    .nutrition {
+        width: 90%;
+        float: none;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    .col1,
+    .col2,
+    .col3 {
+        display: block;
+        float: none;
+        width: 90%;
+        text-align: center;
+    }
 }

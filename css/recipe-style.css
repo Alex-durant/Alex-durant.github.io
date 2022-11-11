@@ -6,7 +6,7 @@ font-family: 'Rock Salt', cursive;
 html {
     box-sizing : border-box ;
     font-family: 'Lobster', cursive;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 2px;
     line-height: 125%;
     color: #8E3200;
@@ -241,7 +241,6 @@ footer p {
 
     h1 {
         font-size: 1.5rem;
-        line-height: 150%;
         text-shadow: none;
     }
 

@@ -4,6 +4,7 @@ html {
     font-size: 1.25rem;
     line-height: 1.2;
     color: #5F7161;
+    text-align: center;
 }
 
 h1, 
@@ -15,7 +16,8 @@ h2 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    opacity: 0%;
 }
 
 h2 {
@@ -36,6 +38,19 @@ h2::after {
     content: "\270D ";
 }
 
+nav {
+    float: right;
+    position: sticky;
+    top: 0;
+    background-color: #95CD41;
+    opacity: 90%;
+    width: 240px;
+}
+
+nav ul {
+    padding: 0;
+}
+
 nav li {
     font-size: 1.3rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -43,13 +58,6 @@ nav li {
     letter-spacing: 1px;
     list-style-type: none;
     text-transform: uppercase;
-}
-
-nav, 
-header,
-main,
-footer {
-    text-align: center;
 }
 
 nav a, 
@@ -74,6 +82,14 @@ nav a:active {
 nav a:hover::before,
 nav a:hover::after {
     content: "\1F43E ";
+}
+
+header,
+main {
+    text-align: 0 auto;
+    line-height: 1.4;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 header p {
@@ -127,4 +143,18 @@ footer:active {
 footer a:hover::before,
 footer a:hover::after {
     content: "\1F4E9";
+}
+
+footer {
+    line-height: 80%;
+    font-weight: 500;
+    position: relative;
+}
+
+small {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    padding: 30px 0;
+    background-color: #95CD41;
 }

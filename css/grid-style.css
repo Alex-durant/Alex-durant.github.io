@@ -1,13 +1,64 @@
+html {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 *,
 * ::before,
 * ::after {
     box-sizing: inherit;
 }
 
+nav {
+    background-color: mediumvioletred;
+    margin: 0 auto 30px;
+    width: 1100px;
+}
 
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
 
+nav li {
+    text-transform: uppercase;
+    list-style-type: none;
+    letter-spacing: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1.5;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline overline dashed palevioletred;
+    text-underline-offset: 6px;
+    color: palevioletred;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+    content: "\1F43E ";
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .parent {
+    width: 1100px;
+    height: 680px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -15,8 +66,23 @@
     grid-row-gap: 10px;
     }
     
+    .div1 span {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 5rem;
+        line-height: 60%;
+    }
+
+    .div1 p {
+        font-size: 1.5rem;
+    }
+
     .div1 { 
         grid-area: 1 / 1 / 3 / 4; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: slateblue;
     }
 
     .div2 { 

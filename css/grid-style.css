@@ -124,3 +124,9 @@ img {
         grid-area: 3 / 6 / 5 / 8; 
         background-color: deeppink;
     }
+
+    footer {
+        margin-top: 200px;
+        display: flex;
+        justify-content: center;
+    }

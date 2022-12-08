@@ -1,32 +1,86 @@
+:root {
+    --font-size: 1vw;
+    --color-red: #bb1b47;
+    --color-blue: #47B5FF;
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.5rem;
+    font-size: calc(var(--font-size) + 18px);
     line-height: 1.5;
 }
 
-h1, h2, h3 {
-    color: #bb1b47;
+h1, 
+h2, 
+h3 {
+    color: var(--color-red);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
     text-transform: capitalize;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: .1rem;
-    font-size: 3.5rem;
+    font-size: calc(var(--font-size) * 6);
+    background-image: -o-radial-gradient(var(--color-red), var(--color-blue));
+    background-image: radial-gradient(var(--color-red), var(--color-blue));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
+h2,
 h3 {
-    font-size: 1.5rem;
+    font-size: calc(var(--font-size) + 32px);
+    background-image: -o-linear-gradient(var(--color-red), var(--color-blue));
+    background-image: linear-gradient(var(--color-red), var(--color-blue));
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+}
+
+nav {
+    background-image: linear-gradient(var(--color-red), var(--color-blue));
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+nav ul {
+    padding-left: 0;
+    width: calc(60% + 30px);
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h2::before,
+h3::before {
+    content: "\1F3B8";
+    font-size: 3rem;
 }
 
 site-intro {
     font-size: 1.25rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(80% - 40px);
+    margin: 0 auto;
+}
+
+main {
+    width: calc(60% - 40px);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 95%;
 }
 
 nav a {
@@ -36,19 +90,24 @@ nav a {
 }
 
 nav a:visited {
-    color: blueviolet;
+    color: gold;
     text-decoration: wavy;
     text-transform: none;
 }
 
 nav a:hover {
-    color: yellowgreen;
+    color: black;
     text-decoration: none;
     text-transform: lowercase;
 }
 
+nav a:hover,
 nav a:active {
-    color: #bb1b47;
-    text-decoration: wavy;
-    text-transform: unset;
+    text-decoration: underline overline dashed;
+    text-underline-offset: 8px;
+}
+
+footer {
+    font-size: 18px;
+    line-height: 1.1;
 }
